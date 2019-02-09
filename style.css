@@ -40,6 +40,12 @@ button {
 .text-center {
   text-align: center;
 }
+.justify-space-around {
+  justify-content: space-around;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
 .nav-height {
   height: 90px;
 }
@@ -65,14 +71,50 @@ button {
 .navigation li a {
   text-decoration: none;
   color: #ffffff;
-  padding: 0.5rem;
+  margin: 0.5rem;
 }
 .site-brand {
   font-size: 30px;
 }
 .site-brand a {
   color: #ffffff;
+  text-transform: uppercase;
+  font-family: cursive;
 }
 .main-section {
   margin-top: 10rem;
+}
+.card {
+  width: 18%;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  box-shadow: 0.2rem 0.25rem 0.25rem rgba(169, 93, 15, 0.075);
+}
+.meal-body {
+  padding: 0.4rem;
+}
+.meal-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.meal-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.meal-details {
+  display: flex;
+  align-items: center;
+}
+.meal-price {
+  font-size: 1rem;
+  margin: 0;
+}
+.add-to-cart {
+  padding: 0.4rem;
+  border: 1px solid;
+  margin-left: auto;
+  border-radius: 3px;
+  background-color: beige;
 }
