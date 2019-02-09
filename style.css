@@ -1,0 +1,11 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("images/bg2.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
