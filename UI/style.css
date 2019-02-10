@@ -1,0 +1,143 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: url("images/bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+}
+nav {
+  background-color: #00000052;
+  height: 90px;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1.3rem;
+}
+a {
+  text-decoration: none;
+}
+button {
+  height: 43px;
+}
+.searchbox {
+  width: 30%;
+  height: 17px;
+  padding: 0.8rem;
+  border: 1px solid #00000094;
+}
+.text-center {
+  text-align: center;
+}
+.jstfy-space-around {
+  justify-content: space-around;
+}
+.jstfy-center {
+  justify-content: center;
+}
+.jstfy-space-btwn {
+  justify-content: space-between;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.nav-height {
+  height: 90px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+}
+.navigation li a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0.5rem;
+}
+.site-brand {
+  font-size: 30px;
+}
+.site-brand a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+.main-section {
+  margin-top: 10rem;
+}
+.card {
+  width: 18%;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  box-shadow: 0.2rem 0.25rem 0.25rem rgba(169, 93, 15, 0.075);
+}
+.meal-body {
+  padding: 0.4rem;
+}
+.meal-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.meal-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.meal-details {
+  display: flex;
+  align-items: center;
+}
+.meal-price {
+  font-size: 1rem;
+  margin: 0;
+}
+.add-to-cart {
+  padding: 0.4rem;
+  margin-left: auto;
+  border-radius: 3px;
+  background-color: #ea5b31;
+}
+.add-to-cart a {
+  color: #ffffff;
+}
+.newsletter {
+  background-color: #ea5b31;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.newsletter-btn {
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
