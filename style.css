@@ -113,8 +113,13 @@ button {
 }
 .add-to-cart {
   padding: 0.4rem;
-  border: 1px solid;
   margin-left: auto;
   border-radius: 3px;
-  background-color: beige;
+  background-color: #ea5b31;
+}
+.add-to-cart a {
+  color: #ffffff;
+}
+.newsletter {
+  background-color: #ea5b31;
 }
