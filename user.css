@@ -21,7 +21,7 @@ header {
 .login {
   width: 33%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #000000b5;
   border-radius: 4px;
 }
@@ -31,7 +31,7 @@ header {
   border-radius: 0.25rem;
   padding: 0.6rem;
   border: 1px solid;
-  margin: 0.3rem;
+  margin: 0.3rem 0;
 }
 .form-input {
   width: 95%;
@@ -41,11 +41,11 @@ header {
   width: 98.3%;
   background-color: #ea5b31;
   color: white;
-  border: none;
+  border: 1px solid;
   font-size: 1rem;
 }
 .login-btn {
-  width: 100.2%;
+  width: 100.4%;
 }
 .form-extras {
   margin: 0rem 0.2rem;
@@ -62,7 +62,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 .to-register span a {
   color: #ea5b31;
   font-size: 0.9rem;
