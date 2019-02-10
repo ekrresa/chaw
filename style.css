@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 button {
-  height: 44px;
+  height: 43px;
 }
 .searchbox {
   width: 30%;
@@ -122,4 +122,19 @@ button {
 }
 .newsletter {
   background-color: #ea5b31;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.newsletter-btn {
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  font-size: 1rem;
 }
