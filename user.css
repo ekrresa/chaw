@@ -15,8 +15,11 @@ header {
   background: none;
 }
 .signup {
-  width: 55%;
+  width: 49%;
   margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #000000b5;
+  border-radius: 4px;
 }
 .login {
   width: 33%;
@@ -34,18 +37,18 @@ header {
   margin: 0.3rem 0;
 }
 .form-input {
-  width: 95%;
+  width: 95.7%;
 }
 .form-btn {
   height: 3rem;
-  width: 98.3%;
+  width: 99.8%;
   background-color: #ea5b31;
   color: white;
   border: 1px solid;
   font-size: 1rem;
 }
 .login-btn {
-  width: 100.4%;
+  width: 101.6%;
 }
 .form-extras {
   margin: 0rem 0.2rem;
