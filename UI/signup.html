@@ -30,18 +30,36 @@
 
     <main>
       <div class="container">
-        <div class="row">
+        <div class="row jstfy-center">
           <h3>Sign Up!</h3>
         </div>
         <div class="row">
-          <form method="post">
-            <input type="text" placeholder="Firstname" />
-            <input type="text" placeholder="Lastname" />
-            <input type="number" placeholder="Phone Number" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Confirm Password" />
-            <button type="submit">Submit</button>
+          <form class="signup" method="post">
+            <div class="row">
+              <input class="form-row" type="text" placeholder="Firstname" />
+              <input class="form-row" type="text" placeholder="Lastname" />
+            </div>
+            <input
+              class="form-input form-row"
+              type="number"
+              placeholder="Phone Number"
+            />
+            <input
+              class="form-row form-input"
+              type="email"
+              placeholder="Email"
+            />
+            <div class="row">
+              <input class="form-row" type="password" placeholder="Password" />
+              <input
+                class="form-row"
+                type="password"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <button class="form-input form-row form-btn" type="submit">
+              Submit
+            </button>
           </form>
         </div>
       </div>

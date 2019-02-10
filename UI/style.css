@@ -40,8 +40,11 @@ button {
 .text-center {
   text-align: center;
 }
-.justify-space-around {
+.jstfy-space-around {
   justify-content: space-around;
+}
+.jstfy-center {
+  justify-content: center;
 }
 .mt-2 {
   margin-top: 2rem;
