@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="user.css" />
   </head>
+
   <body>
     <header>
       <nav>
@@ -31,33 +32,21 @@
     <main>
       <div class="container">
         <div class="row jstfy-center">
-          <h3>Sign Up!</h3>
+          <h3>Log In!</h3>
         </div>
         <div class="row">
-          <form class="signup" method="post">
-            <div class="row">
-              <input class="form-row" type="text" placeholder="Firstname" />
-              <input class="form-row" type="text" placeholder="Lastname" />
-            </div>
+          <form class="login" method="post">
             <input
               class="form-input form-row"
-              type="number"
-              placeholder="Phone Number"
+              type="text"
+              placeholder="Enter Email"
             />
             <input
               class="form-row form-input"
-              type="email"
-              placeholder="Email"
+              type="password"
+              placeholder="Password"
             />
-            <div class="row">
-              <input class="form-row" type="password" placeholder="Password" />
-              <input
-                class="form-row"
-                type="password"
-                placeholder="Confirm Password"
-              />
-            </div>
-            <button class="form-input form-row form-btn" type="submit">
+            <button class="form-row form-btn login-btn" type="submit">
               Submit
             </button>
           </form>

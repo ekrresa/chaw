@@ -18,6 +18,10 @@ header {
   width: 55%;
   margin: 0 auto;
 }
+.login {
+  width: 33%;
+  margin: 0 auto;
+}
 .form-row {
   width: 45%;
   height: 1.5rem;
@@ -36,4 +40,7 @@ header {
   color: white;
   border: none;
   font-size: 1rem;
+}
+.login-btn {
+  width: 100.2%;
 }
