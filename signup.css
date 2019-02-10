@@ -14,3 +14,22 @@ header {
   color: #ffffff;
   background: none;
 }
+.signup {
+  width: 55%;
+  margin: 0 auto;
+}
+.form-row {
+  width: 45%;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+  border: 1px solid;
+  margin: 0.3rem;
+}
+.form-input {
+  width: 95%;
+}
+.form-btn {
+  height: 3rem;
+  width: 98.3%;
+}
