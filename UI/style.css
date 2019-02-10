@@ -46,6 +46,9 @@ button {
 .jstfy-center {
   justify-content: center;
 }
+.jstfy-space-btwn {
+  justify-content: space-between;
+}
 .mt-2 {
   margin-top: 2rem;
 }
