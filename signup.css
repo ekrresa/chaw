@@ -32,4 +32,8 @@ header {
 .form-btn {
   height: 3rem;
   width: 98.3%;
+  background-color: #ea5b31;
+  color: white;
+  border: none;
+  font-size: 1rem;
 }
