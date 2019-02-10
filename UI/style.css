@@ -59,9 +59,6 @@ button {
   flex-wrap: wrap;
   align-items: center;
 }
-.column {
-  flex-basis: 100%;
-}
 .navigation {
   display: flex;
   list-style: none;
