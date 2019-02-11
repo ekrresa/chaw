@@ -1,0 +1,11 @@
+{
+  "name": "chaw",
+  "version": "1.0.0",
+  "description": "chaw backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ochuko Ekrresa",
+  "license": "ISC"
+}
