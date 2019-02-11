@@ -141,3 +141,30 @@ button {
   border: none;
   font-size: 1rem;
 }
+.dropdown {
+  position: relative;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  padding: 0.3rem;
+  background-color: #194f8dbf;
+  border-radius: 5px;
+  width: 133px;
+}
+.dropdown-menu li {
+  list-style: none;
+  border-bottom: 1px solid #ffffff63;
+  padding: 0.3rem 0;
+}
+.dropdown-menu li a {
+  margin: 0;
+}
+.dropdown-menu li:last-of-type {
+  border-bottom: none;
+}
