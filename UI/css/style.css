@@ -20,10 +20,11 @@ nav {
   height: 90px;
 }
 h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
+  text-align: center;
 }
-p {
+.main-caption {
   font-size: 1.3rem;
 }
 a {
