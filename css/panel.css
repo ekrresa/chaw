@@ -6,8 +6,10 @@ aside {
   width: 20%;
 }
 article {
-  width: 80%;
+  width: 79%;
   background-color: whitesmoke;
+  color: #000000c2;
+  padding: 5px;
 }
 .sidebar {
   width: 100%;
@@ -30,4 +32,28 @@ article {
 }
 h1 {
   text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 5px;
+}
+.info {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-btn {
+  width: 100.6%;
+}
+.jstfy-space-btwn input[type="text"] {
+  width: 44.3%;
+}
+.bday-input {
+  width: 33.333%;
 }
