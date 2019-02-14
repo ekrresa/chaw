@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: url("images/signup.jpg") no-repeat center;
+  background: url("../images/signup.jpg") no-repeat center;
   background-size: cover;
   color: #ffffff;
   height: 500px;
