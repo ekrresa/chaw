@@ -1,0 +1,33 @@
+body {
+  background: none;
+  background-color: #194f8d;
+}
+aside {
+  width: 20%;
+}
+article {
+  width: 80%;
+  background-color: whitesmoke;
+}
+.sidebar {
+  width: 100%;
+  height: 88vh;
+  background-color: #194f8dbf;
+}
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+.side-nav li {
+  margin: 5px 0px;
+}
+.side-nav li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+h1 {
+  text-align: center;
+}
