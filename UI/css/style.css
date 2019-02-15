@@ -10,21 +10,22 @@ body {
   padding: 0;
 }
 header {
-  background: url("../images/bg.jpg") no-repeat center;
-  background-size: cover;
   color: #ffffff;
-  height: 500px;
-}
-nav {
   background-color: #00000052;
-  height: 90px;
 }
 h3 {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
 }
+.site-header {
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
 .main-caption {
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
   font-size: 1.3rem;
 }
 a {
@@ -63,9 +64,7 @@ button {
 }
 .row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
 }
 .navigation {
   display: flex;
