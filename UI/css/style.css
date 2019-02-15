@@ -19,6 +19,9 @@ header {
   left: 0;
   right: 0;
 }
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -48,8 +51,10 @@ header {
 .main-caption {
   font-size: 1.3rem;
 }
-a {
-  text-decoration: none;
+.section-header {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
 }
 button {
   height: 43px;
@@ -84,7 +89,7 @@ button {
   margin: 0.5rem;
 }
 .site-brand {
-  font-size: 30px;
+  font-size: 40px;
 }
 .site-brand a {
   color: #ffffff;
