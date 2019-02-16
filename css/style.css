@@ -56,6 +56,9 @@ ul {
 .mg-2 {
   margin: 2rem 0rem;
 }
+.mg-4 {
+  margin: 4rem 0rem;
+}
 .mt-2 {
   margin-top: 2rem;
 }
@@ -165,6 +168,7 @@ button {
 .meal-details {
   display: flex;
   align-items: center;
+  margin-top: 0.5rem;
 }
 .meal-price {
   font-size: 1rem;
