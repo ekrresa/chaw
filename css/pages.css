@@ -2,9 +2,9 @@ header {
   color: #ffffff;
   background-color: #131230;
 }
-.menu-body {
+.main-content {
   padding-top: 140px;
-  color: #4a4a4a;
+  color: #323232;
 }
 .menu-header {
   font-size: 3rem;
@@ -14,6 +14,74 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   margin: 0;
+}
+.cart-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+.item {
+  width: 70%;
+}
+.quantity {
+  width: 10%;
+}
+.price {
+  width: 10%;
+}
+.subtotal {
+  width: 10%;
+}
+.cart-grid {
+  display: flex;
+  margin: 1rem 0rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #ababab;
+  width: 100%;
+}
+.item-image {
+  width: 150px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.item-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.food-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.food-description div {
+  margin: 5px 0px;
+}
+.food-caterer {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ababab;
+}
+.food-name {
+  font-size: 1.7rem;
+  color: #323232;
+  font-weight: 600;
+}
+.food-size {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ababab;
+}
+.delete-food {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.delete-food a {
+  color: #ea5b31;
 }
 .signup {
   width: 49%;
