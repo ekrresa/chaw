@@ -19,15 +19,22 @@ header {
   left: 0;
   right: 0;
 }
-section {
-  margin: 2rem 0rem;
-}
 a {
   text-decoration: none;
 }
+a:hover,
+i:hover {
+  color: #ffbb7d !important;
+}
 footer {
   background-color: #131230;
-  color: whitesmoke;
+  color: #ccc;
+  padding: 4rem 0rem 0.1rem 0rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .container {
   max-width: 1140px;
@@ -45,6 +52,9 @@ footer {
 }
 .jstfy-space-btwn {
   justify-content: space-between;
+}
+.mg-2 {
+  margin: 2rem 0rem;
 }
 .mt-2 {
   margin-top: 2rem;
@@ -220,7 +230,33 @@ button {
   color: #ffbb7d;
   text-transform: uppercase;
   font-family: sans-serif;
+  margin: 1rem 0rem;
 }
 .contact {
   display: flex;
+  align-items: center;
 }
+.text {
+  margin-left: 10px;
+}
+footer p {
+  margin: 0.3rem 0rem;
+}
+.footer-margin {
+  margin-top: 75px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  margin: 0rem 0.5rem;
+}
+footer ul li i {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+/* .social-icons {
+  display: flex;
+  align-items: center;
+} */
