@@ -44,6 +44,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+.d-flex {
+  display: flex;
+}
 .jstfy-space-around {
   justify-content: space-around;
 }
@@ -62,11 +65,19 @@ ul {
 .mt-2 {
   margin-top: 2rem;
 }
+.border-right-faint {
+  border-right: 1px solid #ababab;
+}
 .column {
   display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text-center {
   text-align: center;
