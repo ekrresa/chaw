@@ -2,6 +2,19 @@ header {
   color: #ffffff;
   background-color: #131230;
 }
+.menu-body {
+  padding-top: 140px;
+  color: #4a4a4a;
+}
+.menu-header {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.menu-paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
 .signup {
   width: 49%;
   margin: 0 auto;
