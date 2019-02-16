@@ -96,12 +96,11 @@ ul {
   font-size: 0.9rem;
 }
 .site-brand {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .site-brand a {
   color: #ffbb7d;
   text-transform: uppercase;
-  font-family: sans-serif;
 }
 .main-section {
   background: url("../images/bg.jpg") no-repeat center;
@@ -112,8 +111,8 @@ ul {
   color: #ffffff;
 }
 .main-header {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 500;
   margin: 0;
 }
 .main-caption {
@@ -147,7 +146,7 @@ button {
   width: 18%;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-  box-shadow: 0.2rem 0.25rem 0.25rem rgba(169, 93, 15, 0.075);
+  box-shadow: 0.1rem 0.1rem 1rem #ffbb7d;
 }
 .meal-body {
   padding: 0.4rem;
@@ -158,6 +157,7 @@ button {
   object-fit: cover;
 }
 .meal-title {
+  color: #4a4a4a;
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
@@ -219,6 +219,7 @@ button {
   padding: 0.3rem 0;
 }
 .dropdown-menu li a {
+  font-size: 0.8rem;
   margin: 0;
 }
 .dropdown-menu li:last-of-type {
@@ -256,7 +257,3 @@ footer ul li i {
   font-size: 1.5rem;
   color: #ccc;
 }
-/* .social-icons {
-  display: flex;
-  align-items: center;
-} */
