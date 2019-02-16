@@ -207,15 +207,17 @@ button {
 .dropdown-menu {
   display: none;
   position: absolute;
+  top: 20px;
   flex-direction: column;
   padding: 0.3rem;
-  background-color: #194f8dbf;
   border-radius: 5px;
   width: 133px;
+  background-color: #131230;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .dropdown-menu li {
   list-style: none;
-  border-bottom: 1px solid #ffffff63;
   padding: 0.3rem 0;
 }
 .dropdown-menu li a {
