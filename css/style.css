@@ -25,6 +25,10 @@ section {
 a {
   text-decoration: none;
 }
+footer {
+  background-color: #131230;
+  color: whitesmoke;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -70,10 +74,16 @@ a {
   text-decoration: none;
   color: #ffffff;
   margin: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
 }
 .fa-shopping-basket {
   color: #ffbb7d;
   font-size: 1.7rem;
+}
+.fa-chevron-down {
+  font-size: 0.9rem;
 }
 .site-brand {
   font-size: 40px;
@@ -203,4 +213,14 @@ button {
 }
 .dropdown-menu li:last-of-type {
   border-bottom: none;
+}
+.footer-header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffbb7d;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.contact {
+  display: flex;
 }
