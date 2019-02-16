@@ -263,3 +263,8 @@ footer ul li i {
   font-size: 1.5rem;
   color: #ccc;
 }
+.copyright {
+  background-color: #0d0d27;
+  padding: 1rem 0rem;
+  margin-top: 2rem;
+}
