@@ -30,10 +30,46 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+.jstfy-space-around {
+  justify-content: space-around;
+}
+.jstfy-center {
+  justify-content: center;
+}
+.jstfy-space-btwn {
+  justify-content: space-between;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
 .site-header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+}
+.navigation li a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0.5rem;
+}
+.fa-shopping-basket {
+  color: #ffbb7d;
+  font-size: 1.7rem;
+}
+.site-brand {
+  font-size: 40px;
+}
+.site-brand a {
+  color: #ffbb7d;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 .main-section {
   background: url("../images/bg.jpg") no-repeat center;
@@ -64,37 +100,6 @@ button {
   height: 17px;
   padding: 0.8rem;
   border: 1px solid #00000094;
-}
-.jstfy-space-around {
-  justify-content: space-around;
-}
-.jstfy-center {
-  justify-content: center;
-}
-.jstfy-space-btwn {
-  justify-content: space-between;
-}
-.mt-2 {
-  margin-top: 2rem;
-}
-.navigation {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin-left: auto;
-}
-.navigation li a {
-  text-decoration: none;
-  color: #ffffff;
-  margin: 0.5rem;
-}
-.site-brand {
-  font-size: 40px;
-}
-.site-brand a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: cursive;
 }
 .card {
   width: 18%;
