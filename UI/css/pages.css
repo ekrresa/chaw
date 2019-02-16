@@ -94,6 +94,7 @@ header {
   font-size: 1.1rem;
   text-transform: uppercase;
   box-shadow: 1px 3px 8px 0 #00000026;
+  border-radius: 2px;
 }
 .checkout {
   background-color: #00adb5;
