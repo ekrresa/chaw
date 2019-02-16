@@ -19,6 +19,9 @@ header {
   left: 0;
   right: 0;
 }
+section {
+  margin: 2rem 0rem;
+}
 a {
   text-decoration: none;
 }
@@ -41,6 +44,15 @@ a {
 }
 .mt-2 {
   margin-top: 2rem;
+}
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.text-center {
+  text-align: center;
 }
 .site-header {
   justify-content: space-between;
@@ -89,8 +101,18 @@ a {
 }
 .section-header {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 1.5rem 0;
+  color: #4a4a4a;
+}
+.sub-header {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.sub-paragraph {
+  color: #787878;
 }
 button {
   height: 43px;
