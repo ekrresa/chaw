@@ -35,6 +35,8 @@ header {
 }
 .subtotal {
   width: 10%;
+  color: #ea5b31;
+  font-weight: 500;
 }
 .cart-grid {
   display: flex;
@@ -43,13 +45,13 @@ header {
   width: 100%;
 }
 .item-image {
-  width: 150px;
+  width: 130px;
   margin-right: 20px;
   padding: 10px;
 }
 .item-image img {
   width: 100%;
-  height: 150px;
+  height: 120px;
   object-fit: cover;
 }
 .food-description {
@@ -83,6 +85,18 @@ header {
 }
 .delete-food a {
   color: #ea5b31;
+}
+.cart-btn {
+  background-color: #ff8b21;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  box-shadow: 1px 3px 8px 0 #00000026;
+}
+.checkout {
+  background-color: #00adb5;
 }
 .signup {
   width: 49%;
