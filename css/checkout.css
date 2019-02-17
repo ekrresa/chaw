@@ -13,6 +13,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .tabs button:hover {
   background-color: #ffbb7d;
