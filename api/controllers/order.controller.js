@@ -30,7 +30,7 @@ const orderController = {
   },
 
   createOrder(req, res) {
-    if (req.body.length < 9) {
+    if (Object.keys(req.body).length < 8) {
       return res.status(400).send({ error: 'All fields are required' });
     }
 
