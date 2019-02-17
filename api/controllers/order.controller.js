@@ -42,6 +42,24 @@ const orderController = {
         data: createdOrder
       })
       .status(201);
+  },
+
+  updateOrder(req, res) {
+    const { id } = req.params;
+    const order = orderService.getSingleOrder(id);
+
+    if (!order) {
+      return res
+        .status(404)
+        .send({ status: 'error', message: 'meal not found' });
+    }
+    const updatedOrder = orderService.editOrder(id, req.body);
+    return res
+      .json({
+        status: 'success',
+        data: updatedOrder
+      })
+      .status(201);
   }
 };
 
