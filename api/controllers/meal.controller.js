@@ -17,11 +17,9 @@ const mealController = {
     const meal = mealService.getOneMeal(id);
 
     if (!meal) {
-      if (!meal) {
-        return res
-          .status(404)
-          .send({ status: 'error', message: 'meal does not exist' });
-      }
+      return res
+        .status(404)
+        .send({ status: 'error', message: 'meal does not exist' });
     }
 
     return res
