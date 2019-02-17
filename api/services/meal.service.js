@@ -40,8 +40,8 @@ const mealService = {
 
   deleteMeal(id) {
     const meal = this.getOneMeal(id);
-    const newMeals = data.meals.filter(meal => {
-      return meal.id !== id;
+    const newMeals = data.meals.filter(food => {
+      return food.id !== id;
     });
     data.meals = newMeals;
     return meal;
