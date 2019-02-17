@@ -131,24 +131,16 @@ header {
   border-radius: 4px;
   outline: 0;
 }
-.form-row {
-  width: 45%;
-  height: 1.5rem;
-  border-radius: 0.25rem;
-  padding: 0.6rem;
-  border: 1px solid;
-  margin: 0.3rem 0;
-}
-.form-input {
-  width: 95.7%;
-}
 .form-btn {
   height: 3rem;
-  width: 99.8%;
+  width: 100%;
   background-color: #ea5b31;
   color: white;
-  border: 1px solid;
-  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 .login-btn {
   width: 101.6%;
