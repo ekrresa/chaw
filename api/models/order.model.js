@@ -6,6 +6,7 @@ class Order {
     this.shipping_cost = null;
     this.total = null;
     this.user_id = null;
+    this.address_id = null;
     this.meal_id = [];
     this.caterer_id = null;
   }

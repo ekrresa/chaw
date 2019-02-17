@@ -1,5 +1,5 @@
 export default {
-  meals: [
+  orders: [
     {
       id: 1,
       status: 'delivered',
@@ -7,6 +7,7 @@ export default {
       shipping_cost: 1500,
       total: 4500,
       user_id: 3,
+      address_id: 2,
       meal_id: [2, 5, 12],
       caterer_id: 23
     },
@@ -17,6 +18,7 @@ export default {
       shipping_cost: 2000,
       total: 7000,
       user_id: 5,
+      address_id: 6,
       meal_id: [2, 5, 3],
       caterer_id: 4
     },
@@ -27,6 +29,7 @@ export default {
       shipping_cost: 500,
       total: 1200,
       user_id: 5,
+      address_id: 2,
       meal_id: [4],
       caterer_id: 9
     },
@@ -37,6 +40,7 @@ export default {
       shipping_cost: 500,
       total: 2000,
       user_id: 5,
+      address_id: 3,
       meal_id: [4, 3],
       caterer_id: 12
     }
