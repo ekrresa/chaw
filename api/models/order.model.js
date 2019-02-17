@@ -9,6 +9,8 @@ class Order {
     this.address_id = null;
     this.meal_id = [];
     this.caterer_id = null;
+    this.createdAt = new Date();
+    this.updatedAt = new Date();
   }
 }
 
