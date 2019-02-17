@@ -20,7 +20,7 @@ const mealController = {
       if (!meal) {
         return res
           .status(404)
-          .send({ status: 'failure', message: 'meal does not exist' });
+          .send({ status: 'error', message: 'meal does not exist' });
       }
     }
 
@@ -68,7 +68,7 @@ const mealController = {
     if (!meal) {
       return res
         .status(404)
-        .send({ status: 'failure', message: 'meal does not exist' });
+        .send({ status: 'error', message: 'meal does not exist' });
     }
     const removedMeal = mealService.deleteMeal(id);
     return res
