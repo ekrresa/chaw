@@ -1,6 +1,6 @@
 import express from 'express';
 
-import mealRoutes from './routes/meal.route';
+import mealRoutes from './routes/meal.routes';
 import orderRoutes from './routes/order.routes';
 
 const app = express();
