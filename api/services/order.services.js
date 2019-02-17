@@ -11,6 +11,7 @@ const orderService = {
       newOrder.shipping_cost = order.shipping_cost;
       newOrder.total = order.total;
       newOrder.user_id = order.user_id;
+      newOrder.address_id = order.address_id;
       newOrder.meal_id = order.meal_id;
       newOrder.caterer_id = order.caterer_id;
       return newOrder;
@@ -39,10 +40,7 @@ const orderService = {
     data.orders[index].status = update.status || order.status;
     data.orders[index].number_of_meals =
       update.number_of_meals || order.number_of_meals;
-    data.orders[index].shipping_cost =
-      update.shipping_cost || order.shipping_cost;
-    data.orders[index].total = update.total || order.total;
-    data.orders[index].status = update.status || order.status;
+    data.orders[index].meal_id = update.meal_id || order.meal_id;
   }
 };
 

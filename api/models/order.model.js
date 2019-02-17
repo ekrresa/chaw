@@ -1,7 +1,7 @@
 class Order {
   constructor() {
     this.id = null;
-    this.status = 'confirmed' || 'delivered';
+    this.status = 'confirmed' || 'delivered' || 'cancelled';
     this.number_of_meals = null;
     this.shipping_cost = null;
     this.total = null;
