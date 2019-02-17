@@ -27,6 +27,21 @@ const orderController = {
         data: order
       })
       .status(200);
+  },
+
+  createOrder(req, res) {
+    if (req.body.length < 9) {
+      return res.status(400).send({ error: 'All fields are required' });
+    }
+
+    const newOrder = req.body;
+    const createdOrder = orderService.createOrder(newOrder);
+    return res
+      .json({
+        status: 'success',
+        data: createdOrder
+      })
+      .status(201);
   }
 };
 
