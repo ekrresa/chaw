@@ -2,6 +2,7 @@ import express from 'express';
 
 import mealRoutes from './routes/meal.routes';
 import orderRoutes from './routes/order.routes';
+import menuRoutes from './routes/menu.route';
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/meals', mealRoutes);
 app.use('/api/v1/orders', orderRoutes);
+app.use('/api/v1/menu', menuRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
