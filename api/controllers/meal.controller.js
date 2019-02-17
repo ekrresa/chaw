@@ -33,6 +33,15 @@ const mealController = {
   },
 
   addAMeal(req, res) {
+    if (
+      !req.body.name ||
+      !req.body.size ||
+      !req.body.price ||
+      !req.body.description
+    ) {
+      return res.status(400).send({ error: 'All fields are required' });
+    }
+
     const newMeal = req.body;
     const createdMeal = mealService.createMeal(newMeal);
     return res
@@ -50,7 +59,7 @@ const mealController = {
     if (!meal) {
       return res
         .status(404)
-        .send({ status: 'failure', message: 'meal not found' });
+        .send({ status: 'error', message: 'meal not found' });
     }
     const updatedMeal = mealService.updateMeal(id, req.body);
     return res
