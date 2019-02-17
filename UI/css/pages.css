@@ -143,7 +143,7 @@ header {
   cursor: pointer;
 }
 .form-extras {
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
 .form-extras p {
   font-size: 0.9rem;
