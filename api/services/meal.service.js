@@ -41,10 +41,13 @@ const mealService = {
   },
 
   deleteMeal(id) {
+    const index = parseInt(id, 10);
     const meal = this.getOneMeal(id);
+
     const newMeals = data.meals.filter(food => {
-      return food.id !== id;
+      return food.id !== index;
     });
+
     data.meals = newMeals;
     return meal;
   }
