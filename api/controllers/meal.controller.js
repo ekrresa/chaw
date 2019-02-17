@@ -20,5 +20,54 @@ const mealController = {
         data: meal
       })
       .status(200);
+  },
+
+  addAMeal(req, res) {
+    const newMeal = req.body;
+    const createdMeal = mealService.createMeal(newMeal);
+    return res
+      .json({
+        status: 'success',
+        data: createdMeal
+      })
+      .status(201);
+  },
+
+  updateMeal(req, res) {
+    const { id } = req.params;
+    const meal = this.getSingleMeal(id);
+
+    if (!meal) {
+      return res
+        .status(404)
+        .send({ status: 'failure', message: 'meal does not exist' });
+    }
+    const updatedMeal = mealService.updateMeal(id, req.body);
+    return res
+      .json({
+        status: 'success',
+        data: updatedMeal
+      })
+      .status(201);
+  },
+
+  deleteMeal(req, res) {
+    const { id } = req.params;
+    const meal = this.getSingleMeal(id);
+
+    if (!meal) {
+      return res
+        .status(404)
+        .send({ status: 'failure', message: 'meal does not exist' });
+    }
+    const removedMeal = mealService.deleteMeal(id);
+    return res
+      .json({
+        status: 'success',
+        data: removedMeal
+      })
+      .status(200);
   }
 };
+
+export default mealController;
