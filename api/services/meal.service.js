@@ -17,15 +17,17 @@ const mealService = {
   },
 
   createMeal(meal) {
-    const newId = data.meals.length;
-    meal.id = newId;
-    data.meals.push(meal);
+    const newId = data.meals.length + 1;
+    const mealBody = meal;
+    mealBody.id = newId;
+    data.meals.push(mealBody);
     return meal;
   },
 
   getOneMeal(id) {
-    const meal = data.meals.find(food => food.id === id);
-    return meal || {};
+    const index = parseInt(id, 10);
+    const meal = data.meals.find(food => food.id === index);
+    return meal;
   },
 
   updateMeal(id, update) {
@@ -39,11 +41,15 @@ const mealService = {
   },
 
   deleteMeal(id) {
-    const newMeals = data.meals.filter(meal => {
-      return meal.id !== id;
+    const index = parseInt(id, 10);
+    const meal = this.getOneMeal(id);
+
+    const newMeals = data.meals.filter(food => {
+      return food.id !== index;
     });
+
     data.meals = newMeals;
-    return {};
+    return meal;
   }
 };
 
