@@ -31,12 +31,7 @@ const mealController = {
   },
 
   addAMeal(req, res) {
-    if (
-      !req.body.name ||
-      !req.body.size ||
-      !req.body.price ||
-      !req.body.description
-    ) {
+    if (Object.keys(req.body).length < 5) {
       return res.status(400).send({ error: 'All fields are required' });
     }
 
