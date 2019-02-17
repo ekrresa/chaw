@@ -15,3 +15,5 @@ const showPanel = (panelIndex, colorCode) => {
   });
   tabPanels[panelIndex].style.display = "block";
 };
+
+document.getElementById("defaultOpen").click();

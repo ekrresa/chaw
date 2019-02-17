@@ -71,17 +71,90 @@
 
             <div id="billing" class="tabcontent">
               <h3 class="tab-header">Billing Info</h3>
-              <form action="" method="post"></form>
+              <form action="" method="post">
+                <div class="input-row">
+                  <input
+                    style="margin-right: 5px"
+                    type="text"
+                    placeholder="Firstname"
+                  />
+                  <input type="text" placeholder="Lastname" />
+                </div>
+                <div class="input-row">
+                  <input
+                    style="margin-right: 5px"
+                    type="text"
+                    placeholder="Phone Number"
+                  />
+                  <input type="text" placeholder="Alternate Phone Number" />
+                </div>
+                <div class="input-row">
+                  <input type="text" placeholder="Address" />
+                </div>
+                <div class="input-row">
+                  <input
+                    style="margin-right: 5px"
+                    type="text"
+                    placeholder="Town"
+                  />
+                  <input type="text" placeholder="LGA" />
+                </div>
+                <div class="input-row">
+                  <input type="text" placeholder="Landmark" />
+                </div>
+
+                <div class="row mg-2 jstfy-space-btwn">
+                  <a class="cart-btn" href="./menu.html"
+                    >&larr; Back to Shopping</a
+                  >
+                  <a
+                    class="cart-btn checkout"
+                    href="#"
+                    onclick="showPanel(1, '#ffbb7d')"
+                    >Continue to Payment</a
+                  >
+                </div>
+              </form>
             </div>
 
             <div id="payment" class="tabcontent">
               <h3 class="tab-header">Payment</h3>
-              <p>Paris is the capital of France.</p>
+              <form action="">
+                <div class="input-row">
+                  <input type="text" placeholder="Card Name" />
+                </div>
+                <div class="input-row">
+                  <input type="text" placeholder="Card Number" />
+                </div>
+                <div class="input-row">
+                  <input type="text" placeholder="Month" />
+                  <input type="text" placeholder="Year" />
+                  <input type="text" placeholder="CVV" />
+                </div>
+              </form>
+
+              <div class="row mg-2 jstfy-space-btwn">
+                <a class="cart-btn" href="./menu.html">&larr; Edit Address</a>
+                <a
+                  class="cart-btn checkout"
+                  href="#"
+                  onclick="showPanel(2, '#ffbb7d')"
+                  >Confirm Order</a
+                >
+              </div>
             </div>
 
             <div id="confirmation" class="tabcontent">
               <h3 class="tab-header">Confirmation</h3>
-              <p>Tokyo is the capital of Japan.</p>
+              <h4>Billing Info</h4>
+              <h4>Cart Info</h4>
+              <h4>Shipping Details</h4>
+              <div class="row mg-2 jstfy-space-btwn">
+                <a class="cart-btn" href="./menu.html"
+                  >&larr; Back to Payment</a
+                >
+                <a class="cart-btn checkout" href="#">Confirm?</a>
+              </div>
             </div>
           </section>
           <aside class="summary"></aside>
