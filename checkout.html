@@ -52,10 +52,43 @@
     <main class="main-content">
       <div class="container">
         <div class="row">
-          <section class="checkout-info"></section>
+          <section class="checkout-info">
+            <div class="tabs">
+              <button
+                class="tablink"
+                id="defaultOpen"
+                onclick="showPanel(0, '#ffbb7d')"
+              >
+                Billing Info
+              </button>
+              <button class="tablink" onclick="showPanel(1, '#ffbb7d')">
+                Payment Section
+              </button>
+              <button class="tablink" onclick="showPanel(2, '#ffbb7d')">
+                Confirm Order
+              </button>
+            </div>
+
+            <div id="billing" class="tabcontent">
+              <h3 class="tab-header">Billing Info</h3>
+              <form action="" method="post"></form>
+            </div>
+
+            <div id="payment" class="tabcontent">
+              <h3 class="tab-header">Payment</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="confirmation" class="tabcontent">
+              <h3 class="tab-header">Confirmation</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </section>
           <aside class="summary"></aside>
         </div>
       </div>
     </main>
+
+    <script src="./js/checkout.js"></script>
   </body>
 </html>
