@@ -13,7 +13,17 @@ const mealController = {
 
   getSingleMeal(req, res) {
     const { id } = req.params;
-    const meal = mealService.getAMeal(id);
+
+    const meal = mealService.getOneMeal(id);
+
+    if (!meal) {
+      if (!meal) {
+        return res
+          .status(404)
+          .send({ status: 'failure', message: 'meal does not exist' });
+      }
+    }
+
     return res
       .json({
         status: 'success',
@@ -35,7 +45,7 @@ const mealController = {
 
   updateMeal(req, res) {
     const { id } = req.params;
-    const meal = this.getSingleMeal(id);
+    const meal = mealService.getOneMeal(id);
 
     if (!meal) {
       return res
@@ -53,7 +63,7 @@ const mealController = {
 
   deleteMeal(req, res) {
     const { id } = req.params;
-    const meal = this.getSingleMeal(id);
+    const meal = mealService.getOneMeal(id);
 
     if (!meal) {
       return res
@@ -66,7 +76,7 @@ const mealController = {
         status: 'success',
         data: removedMeal
       })
-      .status(200);
+      .status(204);
   }
 };
 

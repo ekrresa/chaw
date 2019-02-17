@@ -24,8 +24,9 @@ const mealService = {
   },
 
   getOneMeal(id) {
-    const meal = data.meals.find(food => food.id === id);
-    return meal || {};
+    const index = parseInt(id, 10);
+    const meal = data.meals.find(food => food.id === index);
+    return meal;
   },
 
   updateMeal(id, update) {
