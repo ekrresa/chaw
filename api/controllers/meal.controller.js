@@ -1,4 +1,4 @@
-import mealService from '../services/meal.service';
+import mealService from '../services/meal.services';
 
 const mealController = {
   getMeals(req, res) {
@@ -17,11 +17,9 @@ const mealController = {
     const meal = mealService.getOneMeal(id);
 
     if (!meal) {
-      if (!meal) {
-        return res
-          .status(404)
-          .send({ status: 'error', message: 'meal does not exist' });
-      }
+      return res
+        .status(404)
+        .send({ status: 'error', message: 'meal does not exist' });
     }
 
     return res
@@ -33,12 +31,7 @@ const mealController = {
   },
 
   addAMeal(req, res) {
-    if (
-      !req.body.name ||
-      !req.body.size ||
-      !req.body.price ||
-      !req.body.description
-    ) {
+    if (Object.keys(req.body).length < 5) {
       return res.status(400).send({ error: 'All fields are required' });
     }
 
