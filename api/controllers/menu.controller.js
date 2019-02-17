@@ -12,8 +12,8 @@ const menuController = {
   },
 
   newMenu(req, res) {
-    if (!req.body.meal_id) {
-      return res.status(400).send({ error: 'Please select meals to be added' });
+    if (Object.keys(req.body).length < 2) {
+      return res.status(400).send({ error: 'All fields are required' });
     }
     const createdMenu = menuService.addMenu(req.body);
     return res

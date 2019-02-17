@@ -23,6 +23,8 @@ const orderService = {
     const newId = data.orders.length + 1;
     const newOrder = order;
     newOrder.id = newId;
+    newOrder.createdAt = new Date();
+    newOrder.updatedAt = new Date();
     data.orders.push(newOrder);
     return newOrder;
   },
@@ -41,6 +43,7 @@ const orderService = {
     data.orders[index].number_of_meals =
       update.number_of_meals || order.number_of_meals;
     data.orders[index].meal_id = update.meal_id || order.meal_id;
+    data.orders[index].updatedAt = update.updatedAt || new Date();
 
     return data.orders[index];
   }
