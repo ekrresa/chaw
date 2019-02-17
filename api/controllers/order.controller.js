@@ -47,6 +47,7 @@ const orderController = {
   updateOrder(req, res) {
     const { id } = req.params;
     const order = orderService.getSingleOrder(id);
+    console.log(order);
 
     if (!order) {
       return res

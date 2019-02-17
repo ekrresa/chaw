@@ -35,12 +35,14 @@ const orderService = {
 
   editOrder(id, update) {
     const order = this.getSingleOrder(id);
-    const index = data.meals.indexOf(order);
+    const index = data.orders.indexOf(order);
 
     data.orders[index].status = update.status || order.status;
     data.orders[index].number_of_meals =
       update.number_of_meals || order.number_of_meals;
     data.orders[index].meal_id = update.meal_id || order.meal_id;
+
+    return data.orders[index];
   }
 };
 
