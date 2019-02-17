@@ -48,36 +48,45 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-content">
       <div class="container">
         <div class="row jstfy-center">
-          <h3>Sign Up!</h3>
+          <div class="column text-center">
+            <h1 class="page-header mg-0">Sign Up!</h1>
+            <p class="login-caption">Delicious meals await you. Hurry!</p>
+          </div>
         </div>
         <div class="row">
           <form class="signup" method="post">
-            <div class="row jstfy-space-btwn">
-              <input class="form-row" type="text" placeholder="Firstname" />
-              <input class="form-row" type="text" placeholder="Lastname" />
-            </div>
-            <input
-              class="form-input form-row"
-              type="number"
-              placeholder="Phone Number"
-            />
-            <input
-              class="form-row form-input"
-              type="email"
-              placeholder="Email"
-            />
-            <div class="row jstfy-space-btwn">
-              <input class="form-row" type="password" placeholder="Password" />
+            <div class="input-row">
               <input
-                class="form-row"
-                type="password"
-                placeholder="Confirm Password"
+                style="margin-right: 5px"
+                type="text"
+                placeholder="Firstname"
               />
+              <input type="text" placeholder="Lastname" />
             </div>
-            <button class="form-input form-row form-btn" type="submit">
+            <div class="input-row">
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div class="input-row">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-row">
+              <input
+                style="margin-right: 5px"
+                type="password"
+                placeholder="Password"
+              />
+              <input type="password" placeholder="Confirm Password" />
+            </div>
+            <div class="input-row">
+              <select class="user-type" id="">
+                <option value="user">User</option>
+                <option value="caterer">Caterer</option>
+              </select>
+            </div>
+            <button class="form-btn" type="submit">
               Submit
             </button>
             <div class="form-extras">
@@ -92,5 +101,72 @@
         </div>
       </div>
     </main>
+
+    <footer class="mt-3">
+      <div class="container">
+        <div class="row">
+          <h3 class="footer-header">chaw</h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column text-center">
+            <div class="contact">
+              <div class="icon">
+                <i class="fa fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <p>234 Okota Road, Okota, Lagos</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <p>07036161822</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <p>customercare@chaw.ng</p>
+              </div>
+            </div>
+          </div>
+          <div class="column text-center">
+            <p>About</p>
+            <p>Contact</p>
+            <p>FAQ</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="column text-center">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="copyright">
+        <div class="row jstfy-center">
+          <p>&copy; Copyright 2019. All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
