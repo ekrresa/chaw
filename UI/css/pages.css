@@ -6,7 +6,7 @@ header {
   padding-top: 140px;
   color: #323232;
 }
-.menu-header {
+.page-header {
   font-size: 3rem;
   font-weight: 500;
 }
@@ -107,11 +107,29 @@ header {
   border-radius: 4px;
 }
 .login {
-  width: 33%;
+  width: 400px;
   margin: 0 auto;
   padding: 1.5rem;
-  background-color: #000000b5;
+  background-color: #131230;
   border-radius: 4px;
+}
+.login-caption {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+.input-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+.input-row input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: calc(2rem + 1px);
+  border-radius: 4px;
+  outline: 0;
 }
 .form-row {
   width: 45%;

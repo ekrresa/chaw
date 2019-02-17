@@ -56,6 +56,9 @@ ul {
 .jstfy-space-btwn {
   justify-content: space-between;
 }
+.mg-0 {
+  margin: 0;
+}
 .mg-2 {
   margin: 2rem 0rem;
 }
