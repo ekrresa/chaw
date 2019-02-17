@@ -50,7 +50,7 @@ const mealController = {
     if (!meal) {
       return res
         .status(404)
-        .send({ status: 'failure', message: 'meal does not exist' });
+        .send({ status: 'failure', message: 'meal not found' });
     }
     const updatedMeal = mealService.updateMeal(id, req.body);
     return res
