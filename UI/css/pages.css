@@ -1,0 +1,156 @@
+header {
+  color: #ffffff;
+  background-color: #131230;
+}
+.main-content {
+  padding-top: 140px;
+  color: #323232;
+}
+.menu-header {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.menu-paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+.cart-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 1rem 0rem;
+}
+.item {
+  width: 70%;
+}
+.quantity {
+  width: 10%;
+}
+.price {
+  width: 10%;
+}
+.subtotal {
+  width: 10%;
+  color: #ea5b31;
+  font-weight: 500;
+}
+.cart-grid {
+  display: flex;
+  margin: 0.4rem 0rem 0rem 0rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #ababab;
+  width: 100%;
+}
+.item-image {
+  width: 130px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.item-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.food-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.food-description div {
+  margin: 5px 0px;
+}
+.food-caterer {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ababab;
+}
+.food-name {
+  font-size: 1.7rem;
+  color: #323232;
+  font-weight: 600;
+}
+.food-size {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ababab;
+}
+.delete-food {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.delete-food a {
+  color: #ea5b31;
+}
+.cart-btn {
+  background-color: #ff8b21;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  box-shadow: 1px 3px 8px 0 #00000026;
+  border-radius: 2px;
+}
+.checkout {
+  background-color: #00adb5;
+}
+.signup {
+  width: 49%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #000000b5;
+  border-radius: 4px;
+}
+.login {
+  width: 33%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #000000b5;
+  border-radius: 4px;
+}
+.form-row {
+  width: 45%;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+  border: 1px solid;
+  margin: 0.3rem 0;
+}
+.form-input {
+  width: 95.7%;
+}
+.form-btn {
+  height: 3rem;
+  width: 99.8%;
+  background-color: #ea5b31;
+  color: white;
+  border: 1px solid;
+  font-size: 1rem;
+}
+.login-btn {
+  width: 101.6%;
+}
+.form-extras {
+  margin: 0rem 0.2rem;
+}
+.form-extras p {
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+.form-extras p a {
+  text-decoration: none;
+  color: #ea5b31;
+}
+.to-register {
+  display: flex;
+  align-items: center;
+}
+.to-register span a {
+  color: #ea5b31;
+  font-size: 0.9rem;
+}

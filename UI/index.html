@@ -5,229 +5,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chaw - Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container">
-          <div class="row nav-height">
-            <div class="site-brand">
-              <a href="index.html">Chaw</a>
-            </div>
+      <div class="container">
+        <div class="row site-header">
+          <div class="site-brand">
+            <a href="index.html">Chaw</a>
+          </div>
+          <nav>
             <ul class="navigation">
               <li><a href="index.html">Home</a></li>
               <li class="dropdown">
-                <a href="#">Menu &#9662;</a>
+                <a href="#">Menu <i class="fas fa-chevron-down"></i></a>
                 <!-- Start of submenu -->
                 <ul class="dropdown-menu">
-                  <li><a href="#">Menu</a></li>
+                  <li><a href="menu.html">Menu</a></li>
                   <li><a href="index.html#daymenu">Menu of the day</a></li>
                 </ul>
                 <!-- End of submenu -->
               </li>
               <li><a href="index.html#howitworks">How It Works</a></li>
+              <li><a href="cart.html">
+                <i class="fas fa-shopping-basket"></i>
+              </a></li>
               <li><a href="signup.html">Sign up</a></li>
               <li><a href="login.html">Log in</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
-
-      <div class="text-center main-section">
-        <h3>Order delicious food online!</h3>
-        <p>Discover local restaurants that deliver to your doorstep</p>
-        <form action="" method="post">
-          <input
-            class="searchbox"
-            type="text"
-            name=""
-            placeholder="Search food..."
-          />
-          <button type="submit">Search</button>
-        </form>
       </div>
     </header>
 
-    <main>
+    <main class="text-center main-section">
+      <h3 class="main-header">Order delicious food online!</h3>
+      <p class="main-caption">
+        Discover local restaurants that deliver to your doorstep
+      </p>
+      <form action="" method="post">
+        <input
+          class="searchbox"
+          type="text"
+          name=""
+          placeholder="Search food..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </main>
+
+    <section class="mg-2">
       <div class="container">
-        <div class="row">
-          <h3>Popular Chops</h3>
+        <div class="row jstfy-center">
+          <h3 class="section-header">Popular Chops</h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row jstfy-space-btwn">
+          <div class="card">
+            <img class="meal-image" src="images/cake.jpg" alt="cake" />
+            <div class="meal-body">
+              <h5 class="meal-title">Cake</h5>
+              <div class="meal-details">
+                <p class="meal-price">&#8358;3000</p>
+                <div class="add-to-cart">
+                  <a href="#">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="meal-image" src="images/noodles.png" alt="cake" />
+            <div class="meal-body">
+              <h5 class="meal-title">Cake</h5>
+              <div class="meal-details">
+                <p class="meal-price">&#8358;3000</p>
+                <div class="add-to-cart">
+                  <a href="#">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="meal-image" src="images/casserole.jpg" alt="cake" />
+            <div class="meal-body">
+              <h5 class="meal-title">Cake</h5>
+              <div class="meal-details">
+                <p class="meal-price">&#8358;3000</p>
+                <div class="add-to-cart">
+                  <a href="#">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="meal-image" src="images/fish.jpg" alt="cake" />
+            <div class="meal-body">
+              <h5 class="meal-title">Cake</h5>
+              <div class="meal-details">
+                <p class="meal-price">&#8358;3000</p>
+                <div class="add-to-cart">
+                  <a href="#">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="meal-image" src="images/cake.jpg" alt="cake" />
+            <div class="meal-body">
+              <h5 class="meal-title">Cake</h5>
+              <div class="meal-details">
+                <p class="meal-price">&#8358;3000</p>
+                <div class="add-to-cart">
+                  <a href="#">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section>
+        <div class="container">
+          <div class="row jstfy-center">
+            <h3 id="daymenu" class="section-header">Menu of the Day</h3>
+          </div>
         </div>
 
-        <section>
-          <div class="row jstfy-space-around">
-            <div class="card">
-              <img class="meal-image" src="images/cake.jpg" alt="cake" />
-              <div class="meal-body">
-                <h5 class="meal-title">Cake</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;3000</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/cake.jpg" alt="cake" />
-              <div class="meal-body">
-                <h5 class="meal-title">Cake</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;3000</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/cake.jpg" alt="cake" />
-              <div class="meal-body">
-                <h5 class="meal-title">Cake</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;3000</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/cake.jpg" alt="cake" />
-              <div class="meal-body">
-                <h5 class="meal-title">Cake</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;3000</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/cake.jpg" alt="cake" />
-              <div class="meal-body">
-                <h5 class="meal-title">Cake</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;3000</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row jstfy-space-around mt-2">
-            <div class="card">
-              <img class="meal-image" src="images/fish.jpg" alt="fish" />
-              <div class="meal-body">
-                <h5 class="meal-title">Fish</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;2500</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/fish.jpg" alt="fish" />
-              <div class="meal-body">
-                <h5 class="meal-title">Fish</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;2500</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/fish.jpg" alt="fish" />
-              <div class="meal-body">
-                <h5 class="meal-title">Fish</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;2500</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/fish.jpg" alt="fish" />
-              <div class="meal-body">
-                <h5 class="meal-title">Fish</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;2500</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="meal-image" src="images/fish.jpg" alt="fish" />
-              <div class="meal-body">
-                <h5 class="meal-title">Fish</h5>
-                <div class="meal-details">
-                  <p class="meal-price">&#8358;2500</p>
-                  <div class="add-to-cart">
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div class="row">
-              <h3 id="daymenu">Menu of the Day</h3>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div class="row">
-              <h3 id="howitworks">How It Works</h3>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div class="row">
-              <h3>Featured Caterers</h3>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="newsletter">
         <div class="container">
-          <p style="margin-top: 0;">
-            Subscribe to our newsletter via email to get firsthand information
-            about great offers and discounts as they become available.
-          </p>
-          <div class="row">
-            <form class="newsletter-form" method="post">
-              <input
-                class="searchbox"
-                type="text"
-                placeholder="Enter City..."
-              />
-              <input
-                class="searchbox"
-                type="text"
-                placeholder="Enter Email..."
-              />
-              <button class="newsletter-btn" type="submit">Subscribe</button>
-            </form>
+          <div class="row jstfy-space-btwn">
+            <div class="card">
+              <img class="meal-image" src="images/noodles.png" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/cake.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/fish.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/pancakes.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/cake.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row jstfy-space-btwn mt-2">
+            <div class="card">
+              <img class="meal-image" src="images/cake.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/noodles.png" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/fish.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/cake.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="meal-image" src="images/pancakes.jpg" alt="cake" />
+              <div class="meal-body">
+                <h5 class="meal-title">Cake</h5>
+                <div class="meal-details">
+                  <p class="meal-price">&#8358;3000</p>
+                  <div class="add-to-cart">
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <br />
-      <br />
-    </main>
+      <section class="mg-2">
+        <div class="container">
+          <div class="row jstfy-center">
+            <h3 id="howitworks" class="section-header">How It Works</h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="column text-center">
+              <img src="./images/how-it-works-1.svg" alt="cake" />
+              <div>
+                <h3 class="sub-header">Select your chaw</h3>
+                <p class="sub-paragraph">Browse our wide collection of delicious meals.</p>
+              </div>
+            </div>
+            <div class="column text-center">
+              <img src="./images/how-it-works-2.svg" alt="cake" />
+              <div>
+                <h3 class="sub-header">Receive at your doorstep</h3>
+                <p class="sub-paragraph">Our delivery timelines are world-class fast.</p>
+              </div>
+            </div>
+            <div class="column text-center">
+              <img src="./images/how-it-works-3.svg" alt="cake" />
+              <div>
+                <h3 class="sub-header">Enjoy your order</h3>
+                <p class="sub-paragraph">Enjoy your chaw. Remember us soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="newsletter mg-2">
+      <div class="container">
+        <p style="margin-top: 0;">
+          Subscribe to our newsletter via email to get firsthand information
+          about great offers and discounts as they become available.
+        </p>
+        <div class="row">
+          <form class="newsletter-form" method="post">
+            <input class="searchbox" type="text" placeholder="Enter City..." />
+            <input class="searchbox" type="text" placeholder="Enter Email..." />
+            <button class="newsletter-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <footer>
+      <div class="container">
+        <div class="row">
+          <h3 class="footer-header">chaw</h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column text-center">
+            <div class="contact">
+              <div class="icon">
+                <i class="fa fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <p>234 Okota Road, Okota, Lagos</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <p>07036161822</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <p>customercare@chaw.ng</p>
+              </div>
+            </div>
+          </div>
+          <div class="column text-center">
+            <p>About</p>
+            <p>Contact</p>
+            <p>FAQ</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="column text-center">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="copyright">
+        <div class="row jstfy-center">
+          <p>&copy; Copyright 2019. All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chaw - Signup</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/user.css" />
+    <link rel="stylesheet" href="../css/panel.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row nav-height">
+            <div class="site-brand">
+              <a href="index.html">Chaw</a>
+            </div>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Menu &#9662;</a>
+                <!-- Start of submenu -->
+                <ul class="dropdown-menu">
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="index.html#daymenu">Menu of the day</a></li>
+                </ul>
+                <!-- End of submenu -->
+              </li>
+              <li><a href="index.html#howitworks">How It Works</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <li><a href="login.html">Log in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- Side Navigation -->
+          <aside>
+            <nav class="sidebar">
+              <ul class="side-nav">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Address Book</a></li>
+                <li><a href="#">Wishlist</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <!-- Main Content -->
+          <article>
+            <h3>Overview</h3>
+            <section>
+              <div class="grid">
+                <div class="info">
+                  <form class="" method="post">
+                    <div class="row jstfy-space-btwn">
+                      <input
+                        class="form-row"
+                        type="text"
+                        placeholder="Firstname"
+                      />
+                      <input
+                        class="form-row"
+                        type="text"
+                        placeholder="Lastname"
+                      />
+                    </div>
+                    <input
+                      class="form-input form-row"
+                      type="text"
+                      placeholder="Phone Number"
+                    />
+                    <input
+                      class="form-row form-input"
+                      type="email"
+                      placeholder="Email"
+                      disabled
+                    />
+                    <button class="form-input form-row form-btn" type="submit">
+                      Save
+                    </button>
+                  </form>
+                </div>
+                <div class="order-qty centered">
+                  <p>6 Orders Made!</p>
+                  <button>Wanna See?</button>
+                </div>
+                <div class="centered">
+                  <p><a href="#">Change Password</a></p>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

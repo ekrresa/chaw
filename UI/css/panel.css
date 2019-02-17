@@ -1,0 +1,64 @@
+body {
+  background: none;
+  background-color: #194f8d;
+}
+aside {
+  width: 20%;
+}
+article {
+  width: 79%;
+  background-color: whitesmoke;
+  color: #000000c2;
+  padding: 5px;
+}
+.sidebar {
+  width: 100%;
+  height: 88vh;
+  background-color: #194f8dbf;
+}
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+.side-nav li {
+  margin: 5px 0px;
+}
+.side-nav li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+h1 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 5px;
+}
+.info {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-qty {
+  font-size: 2rem;
+  color: #ff7800;
+}
+.form-btn {
+  width: 100.6%;
+  background-color: #ff7800;
+}
+.jstfy-space-btwn input[type="text"] {
+  width: 44.3%;
+}
+.bday-input {
+  width: 33.333%;
+}
